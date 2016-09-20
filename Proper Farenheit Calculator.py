@@ -1,0 +1,10 @@
+def temp_calc_CF():
+    while True:
+        temp_in = input("Enter a temperature in Celcius to calculate to Farenheit: ")
+        try:
+            temp_out = ((float(temp_in) * 9) / 5) + 32
+            print("%.2f" % temp_out)
+            break
+        except ValueError:
+            print("Temperature can't be empty or contain letters")
+temp_calc_CF()
